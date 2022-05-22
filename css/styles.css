@@ -1,0 +1,238 @@
+/* цвет остовного текста color: #757575; */
+/* вторичныу цвет текста color: #212121; */
+/* color: #FFFFFF; */
+/* акцент  color: #2196F3;*/
+/* hover change #188CE8; */
+/* background: #E5E5E5; */
+/* second background lite: #F5F4FA; 
+logo color dark color: #000000;
+section background dark: #2F303A;
+*/
+:root{
+    --primary-font-family:'Roboto', sans-serif;
+    --secondary-font-family:'Raleway', sans-serif;
+    --primary-font-weight: 400;
+    --secondary-font-weight: 700;
+    --accent-color: #2196F3;
+    --btn-other-color: #188CE8;
+    --main-p-color: #757575;
+    --main-h-color:#212121;
+    --main-white-color:#FFFFFF;
+    --logo-dark-color:#000000;
+    --main-bg-lite-color:#F5F4FA;
+    --main-bg-dark-color:#2F303A;
+    --box-shadow-filter:0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+    --footer-link-col:rgba(255, 255, 255, 0.6);
+    --hero-btn-box-shadow:rgba(0, 0, 0, 0.15);
+    --primary-letter-spacing: 0.03em;
+    --secondary-letter-spacing: 0.06em;
+
+}
+
+.list {
+    list-style: none;
+}
+
+.link {
+    text-decoration: none;
+}
+body{
+    font-family:var(--primary-font-family);
+    background-color: var(--main-white-color);
+    color: var(--main-p-color);
+}
+
+/* ========================== HEADER================================ */
+.logo {
+    font-family: var(--secondary-font-family);
+    font-weight: var(--secondary-font-weight);
+    font-size: 26px;
+    line-height: 1.19;
+    letter-spacing: var(--primary-letter-spacing);
+    color: var(--accent-color);
+}
+.logo-dark {
+    color: var(--logo-dark-color);
+}
+.nav-link, 
+.header-link-phone,
+.header-link-mail{
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    color: var(--main-h-color);
+}
+.header-link-phone,
+.header-link-mail{
+    color: var(--main-p-color);
+}
+.nav-link:hover, 
+.header-link-phone:hover, 
+.header-link-mail:hover,
+.nav-link:focus,
+.header-link-phone:focus,
+.header-link-mail:focus{
+    color: var(--accent-color);
+}
+
+
+.link-active {
+    color: var(--accent-color);
+}
+
+/* =================== /HEADER ================================= */
+
+/* ======================== Section MAIN ========================= */
+.hero {
+    background: var(--main-bg-dark-color);
+}
+.main-title {
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 1.36;
+    text-align: center;
+    letter-spacing: var(--secondary-letter-spacing);
+    text-transform: uppercase;
+    color: var(--main-white-color);
+}
+.hero-btn{
+    font-family: inherit;
+    font-weight: var(--secondary-font-weight);
+    font-size: 16px;
+    line-height: 1.88;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    letter-spacing: var(--secondary-letter-spacing);
+    color: var(--main-white-color);
+    background-color: var(--accent-color);
+    box-shadow: var(--hero-btn-box-shadow);
+    border-radius: 4px;
+    
+}
+.hero-btn:hover {
+    background-color: var(--btn-other-color);
+    color: var(--main-white-color);
+}
+/* ===================== /MAIN ====================================== */
+
+/* =========================== FEATURES ============================== */
+.feature-title{
+    font-weight: var(--secondary-font-weight);
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: var(--primary-letter-spacing);
+    text-transform: uppercase;
+    color: var(--main-h-color);
+}
+.feature-text,
+.footer-link,
+.footer-link-location{
+    font-weight: var(--primary-font-weight);
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: var(--primary-letter-spacing);
+}
+/* .feature-text{
+    color: var(--main-p-color);
+} */
+/* =========================== /FEATURES ============================== */
+
+/* ======================== WORK ======================================== */
+.section-title{
+
+        font-weight: var(--secondary-font-weight);
+        font-size: 36px;
+        line-height: 1.17;
+        text-align: center;
+        letter-spacing: var(--primary-letter-spacing);
+        color: var(--main-h-color);
+}
+/* ======================== /WORK ======================================== */
+
+/* ======================== TEAM ========================================== */
+.section-team{
+    background: var(--main-bg-lite-color);
+}
+.team-title{
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.19;
+    text-align: center;
+    letter-spacing: var(--primary-letter-spacing);
+    color: var(--main-h-color);
+}
+.team-text{
+    font-weight: var(--primary-font-weight);
+    font-size: 16px;
+    line-height: 1.19;
+    text-align: center;
+    letter-spacing: var(--primary-letter-spacing);
+    /* color: var(--main-p-color); */
+}
+
+/* ======================== /TEAM ========================================== */
+
+/* ============================= FOOTER ========================= */
+.page-footer {
+    background: var(--main-bg-dark-color);
+}
+.footer-item{
+    font-style: normal
+}
+.footer-link{
+    color: var(--footer-link-col)
+}
+.logo-light, 
+.footer-link-location{
+    color: var(--main-white-color)
+}
+
+.footer-link:hover,
+.footer-link:focus{
+    color: var(--accent-color);
+}
+/* ============================= /FOOTER ========================= */
+
+/* ============================= PORTFOLIO html ====================== */
+/* ====  filter ==== */
+.filter-btn {
+    font-family: inherit;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.63;
+    text-align: center;
+    letter-spacing: var(--primary-letter-spacing);
+    color: var(--main-h-color);
+    border: none;
+    background: var(--main-bg-lite-color);
+    border-radius: 4px;
+    cursor: pointer;
+}
+.filter-btn:hover,
+.filter-btn:focus{
+    background-color: var(--accent-color);
+    box-shadow: var(--box-shadow-filter);
+    border-radius: 4px;
+    color: var(--main-white-color);
+}
+/* ===== /filter ====-=== */
+/* ====== Content =======*/
+.content-title{
+    font-weight: var(--secondary-font-weight);
+    font-size: 18px;
+    line-height: 2;
+    letter-spacing: 0.06em;
+    color: var(--main-h-color);
+}
+.content-text{
+    font-weight: var(--primary-font-weight);
+    font-size: 16px;
+    line-height: 1.88;
+    letter-spacing: var(--primary-letter-spacing);
+    color: var(--main-p-color);
+}
+/* ====== /Content =======*/
+/* ============================= /PORTFOLIO html ====================== */
