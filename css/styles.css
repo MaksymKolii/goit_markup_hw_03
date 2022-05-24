@@ -43,6 +43,12 @@ body{
 }
 
 /* ========================== HEADER================================ */
+.container{
+    width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+    outline: 2px solid tomato;
+}
 .logo {
     font-family: var(--secondary-font-family);
     font-weight: var(--secondary-font-weight);
@@ -96,7 +102,9 @@ body{
     text-transform: uppercase;
     color: var(--main-white-color);
 }
-.hero-btn{
+.button{
+    display: inline-block;
+    min-width: 200px;
     font-family: inherit;
     font-weight: var(--secondary-font-weight);
     font-size: 16px;
@@ -106,13 +114,14 @@ body{
     align-items: center;
     text-align: center;
     letter-spacing: var(--secondary-letter-spacing);
+    box-shadow: var(--hero-btn-box-shadow);
     color: var(--main-white-color);
     background-color: var(--accent-color);
-    box-shadow: var(--hero-btn-box-shadow);
     border-radius: 4px;
+    padding: 10px 32px;
     
 }
-.hero-btn:hover {
+.button:hover {
     background-color: var(--btn-other-color);
     color: var(--main-white-color);
 }
