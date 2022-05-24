@@ -31,7 +31,19 @@ section background dark: #2F303A;
 
 .list {
     list-style: none;
+    padding: 0px;
+    margin: 0px;
 }
+/* h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p{
+    margin-top: 0px;
+    margin-bottom: 0px;
+} */
 
 .link {
     text-decoration: none;
@@ -47,6 +59,7 @@ body{
     width: 1200px;
     margin-left: auto;
     margin-right: auto;
+
     outline: 2px solid tomato;
 }
 .logo {
@@ -92,25 +105,28 @@ body{
 /* ======================== Section MAIN ========================= */
 .hero {
     background: var(--main-bg-dark-color);
+    text-align: center;
+    margin-bottom: 94px;
 }
 .main-title {
+    margin-top: 0px;
+    margin-bottom: 40px;
     font-weight: 900;
     font-size: 44px;
     line-height: 1.36;
-    text-align: center;
     letter-spacing: var(--secondary-letter-spacing);
     text-transform: uppercase;
     color: var(--main-white-color);
 }
 .button{
-    display: inline-block;
+    
     min-width: 200px;
     font-family: inherit;
     font-weight: var(--secondary-font-weight);
     font-size: 16px;
     line-height: 1.88;
     cursor: pointer;
-    display: flex;
+    display: inline-block;
     align-items: center;
     text-align: center;
     letter-spacing: var(--secondary-letter-spacing);
@@ -119,6 +135,7 @@ body{
     background-color: var(--accent-color);
     border-radius: 4px;
     padding: 10px 32px;
+    border: 1px solid transparent;
     
 }
 .button:hover {
@@ -128,7 +145,12 @@ body{
 /* ===================== /MAIN ====================================== */
 
 /* =========================== FEATURES ============================== */
+.section-features{
+    margin-bottom: 94px;
+}
 .feature-title{
+    margin-top: 0px;
+    margin-bottom: 10px;
     font-weight: var(--secondary-font-weight);
     font-size: 14px;
     line-height: 1.14;
@@ -143,6 +165,7 @@ body{
     font-size: 14px;
     line-height: 1.71;
     letter-spacing: var(--primary-letter-spacing);
+    margin-top: 0px;
 }
 /* .feature-text{
     color: var(--main-p-color);
@@ -159,11 +182,17 @@ body{
         letter-spacing: var(--primary-letter-spacing);
         color: var(--main-h-color);
 }
+.section-work{
+    margin-bottom: 94px;
+}
 /* ======================== /WORK ======================================== */
 
 /* ======================== TEAM ========================================== */
 .section-team{
     background: var(--main-bg-lite-color);
+}
+.section-team .container{
+    padding: ;
 }
 .team-title{
     font-weight: 500;
