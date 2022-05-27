@@ -47,6 +47,8 @@ ol{
 }
 img{
     display: block;
+    max-width: 100%;
+    height: auto;
 }
 
 .link {
@@ -57,6 +59,18 @@ body{
     background-color: var(--main-white-color);
     color: var(--main-p-color);
 }
+.visually-hidden { 
+    position: absolute; 
+    width: 1px; 
+    height: 1px; 
+    margin: -1px; 
+    border: 0; 
+    padding: 0; 
+    white-space: nowrap; 
+    clip-path: inset(100%); 
+    clip: rect(0 0 0 0); 
+    overflow: hidden; 
+    } 
 
 /* ========================== HEADER================================ */
 .container{
@@ -129,23 +143,26 @@ body{
     color: var(--accent-color);
 }
 
-
 .link-active {
     color: var(--accent-color);
 }
-
+.section{
+    padding-top: 94px;
+    padding-bottom: 94px
+}
 /* =================== /HEADER ================================= */
 
 /* ======================== Section MAIN ========================= */
+/* ============= HERO ================ */
 .hero {
     background: var(--main-bg-dark-color);
-    text-align: center;
     padding-top: 200px;
     padding-bottom: 200px;
-    
+    text-align: center;
 }
 
 .main-title {
+    width: 700px;
     margin-top: 0px;
     margin-bottom: 30px;
     font-weight: 900;
@@ -156,7 +173,6 @@ body{
     color: var(--main-white-color);
 }
 .button{
-    
     min-width: 200px;
     font-family: inherit;
     font-weight: var(--secondary-font-weight);
@@ -173,19 +189,14 @@ body{
     border-radius: 4px;
     padding: 10px 32px;
     border: 1px solid transparent;
-    
 }
 .button:hover {
     background-color: var(--btn-other-color);
     color: var(--main-white-color);
 }
-/* ===================== /MAIN ====================================== */
+
 
 /* =========================== FEATURES ============================== */
-.section-features{
-    padding-top: 94px;
-    padding-bottom: 94px;
-}
 .feature-title{
     margin-top: 0px;
     margin-bottom: 10px;
@@ -206,27 +217,46 @@ body{
     margin-top: 0px;
 }
 .feature-list{
-
     display: flex;
-    align-items: center;
+
+    /* ===!!!!!!! NOT WORKING!!!! ======== */
+    /* flex-wrap: wrap;  */
+    
 }
-.feature-item{
-    padding-right: 30px;
+
+.feature-item:not(:nth-child(4n)){
+    margin-right: 30px;
 }
+.feature-item:not(:nth-last-child(-n+4)){
+    margin-bottom: 30px;
+}
+
+
 /* =========================== /FEATURES ============================== */
 
 /* ======================== WORK ======================================== */
-.section-title{
+.work-list{
+    display: flex;
+    flex-wrap: wrap;
+}
+.work-item:not(:nth-child(3n)){
+    margin-right: 30px;
+}
+.work-item:not(:nth-last-child(-n+3)){
+    margin-bottom: 30px;
+}
 
+.section-title{
         font-weight: var(--secondary-font-weight);
         font-size: 36px;
         line-height: 1.17;
         text-align: center;
         letter-spacing: var(--primary-letter-spacing);
         color: var(--main-h-color);
+        margin-bottom: 50px;
 }
 .section-work{
-    margin-bottom: 94px;
+    padding-top: 0;
 }
 /* ======================== /WORK ======================================== */
 
@@ -234,9 +264,25 @@ body{
 .section-team{
     background: var(--main-bg-lite-color);
 }
-.section-team .container{
-    padding: ;
+.team-list{
+    display: flex;
+    flex-wrap: wrap;
+
+    /* margin-left: -30px;
+    margin-top: -30px; */
 }
+.team-item:not(:nth-child(4n)){
+    margin-right: 30px;
+}
+.team-item:not(:nth-last-child(-n+4)){
+    margin-bottom: 30px;
+}
+/* .team-item{
+    margin-left: 30px;
+    margin-top: 30px;
+} */
+
+
 .team-title{
     font-weight: 500;
     font-size: 16px;
@@ -255,13 +301,25 @@ body{
 }
 
 /* ======================== /TEAM ========================================== */
+/* ===================== /MAIN ====================================== */
 
 /* ============================= FOOTER ========================= */
 .page-footer {
     background: var(--main-bg-dark-color);
+    padding-top: 45px;
+    padding-bottom: 75px;
+
+}
+.logo-footer{
+    display: inline-block;
+    margin-right: 0;
+    margin-bottom: 20px;
 }
 .footer-item{
-    font-style: normal
+    font-style: normal;
+}
+.footer-item:not(:last-child){
+    margin-bottom: 10px;
 }
 .footer-link{
     color: var(--footer-link-col)
@@ -279,7 +337,15 @@ body{
 
 /* ============================= PORTFOLIO html ====================== */
 /* ====  filter ==== */
+.filter-list{
+    display: flex;
+    
+}
+.filter-item{
+    align-items: center;
+}
 .filter-btn {
+    min-width: 73px;
     font-family: inherit;
     font-weight: 500;
     font-size: 16px;
@@ -291,7 +357,11 @@ body{
     background: var(--main-bg-lite-color);
     border-radius: 4px;
     cursor: pointer;
+
+    display: inline-block;
+    align-items: center;
 }
+
 .filter-btn:hover,
 .filter-btn:focus{
     background-color: var(--accent-color);
@@ -301,6 +371,17 @@ body{
 }
 /* ===== /filter ====-=== */
 /* ====== Content =======*/
+.content-list{
+    display: flex;
+    flex-wrap: wrap;
+}
+.content-item:not(:nth-child(3n)){
+    margin-right: 30px;
+}
+.content-item:not(:nth-last-child(-n+3)){
+    margin-bottom: 30px;
+}
+
 .content-title{
     font-weight: var(--secondary-font-weight);
     font-size: 18px;
