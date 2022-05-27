@@ -337,6 +337,7 @@ body{
 
 /* ============================= PORTFOLIO html ====================== */
 /* ====  filter ==== */
+
 .filter-list{
     display: flex;
     
@@ -374,6 +375,8 @@ body{
 .content-list{
     display: flex;
     flex-wrap: wrap;
+    /* ===== Not working ===== */
+    margin-bottom: 34px;
 }
 .content-item:not(:nth-child(3n)){
     margin-right: 30px;
