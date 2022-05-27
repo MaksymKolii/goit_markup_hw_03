@@ -45,6 +45,9 @@ ol{
     margin-bottom: 0px;
     padding-left: 0px;
 }
+img{
+    display: block;
+}
 
 .link {
     text-decoration: none;
@@ -60,8 +63,25 @@ body{
     width: 1200px;
     margin-left: auto;
     margin-right: auto;
+    padding-left: 15px;
+    padding-right: 15px;
 
     outline: 2px solid tomato;
+}
+.page-header-container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.navigation{
+    display: flex;
+    align-items: center;
+}
+.nav-list{
+    display: flex;
+}
+.header-contacts{
+    display: flex;
 }
 .logo {
     font-family: var(--secondary-font-family);
@@ -70,10 +90,19 @@ body{
     line-height: 1.19;
     letter-spacing: var(--primary-letter-spacing);
     color: var(--accent-color);
+    margin-right: 93px;
 }
 .logo-dark {
     color: var(--logo-dark-color);
 }
+.nav-item:not(:last-child){
+    margin-right: 50px;
+}
+.header-link-mail{
+    margin-left: ;
+    margin-right: 50px;
+}
+
 .nav-link, 
 .header-link-phone,
 .header-link-mail{
