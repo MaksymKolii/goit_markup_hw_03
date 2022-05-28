@@ -222,7 +222,7 @@ body{
     display: flex;
 
     /* ===!!!!!!! NOT WORKING!!!! ======== */
-    /* flex-wrap: wrap;  */
+    flex-wrap: wrap; 
     
 }
 
