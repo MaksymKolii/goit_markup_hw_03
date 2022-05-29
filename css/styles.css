@@ -70,17 +70,20 @@ body{
     clip: rect(0 0 0 0); 
     overflow: hidden; 
     } 
-
+    .section{
+        padding: 94px 0;
+    }
+    .container{
+        width: 1200px;
+        margin-left: auto;
+        margin-right: auto;
+        padding-left: 15px;
+        padding-right: 15px;
+    
+        outline: 2px solid tomato;
+    }
 /* ========================== HEADER================================ */
-.container{
-    width: 1200px;
-    margin-left: auto;
-    margin-right: auto;
-    padding-left: 15px;
-    padding-right: 15px;
 
-    outline: 2px solid tomato;
-}
 .page-header{
     border-bottom-width: 1px;
     border-bottom-style: solid;
@@ -91,6 +94,8 @@ body{
 .page-header-container{
     display: flex;
     align-items: center;
+    /* -- Можно justify-content: space-between; если 2 флекс элемента, и убрать margin-left: auto; в header-contacts ---*/
+    
     
 }
 .navigation{
@@ -147,9 +152,6 @@ body{
 
 .link-active {
     color: var(--accent-color);
-}
-.section{
-    padding: 94px 0;
 }
 
 /* =================== /HEADER ================================= */
