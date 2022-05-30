@@ -22,6 +22,7 @@ section background dark: #2F303A;
     --main-bg-lite-color:#F5F4FA;
     --main-bg-dark-color:#2F303A;
     --box-shadow-filter:0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+    --box-shadow-team-item-box: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
     --footer-link-col:rgba(255, 255, 255, 0.6);
     --hero-btn-box-shadow:rgba(0, 0, 0, 0.15);
     --primary-letter-spacing: 0.03em;
@@ -264,28 +265,34 @@ body{
 /* =========================== /FEATURES ============================== */
 
 /* ======================== WORK ======================================== */
+
 .work-list{
     display: flex;
     flex-wrap: wrap;
     margin-left: -30px;
     margin-top: -30px;
 }
-/*
- .work-item:not(:nth-child(3n)){
-    margin-right: 30px;
-}
-.work-item:not(:nth-last-child(-n+3)){
-    margin-bottom: 30px;
-}
-} */
-
 .work-item{
     flex-basis: calc((100% - 90px) / 3);
     margin-left: 30px;
     margin-top: 30px;
 }
 
-
+/* ===Также не совсем правильно работает */
+/* .work-list{
+    display: flex;
+    flex-wrap: wrap;
+}
+.work-item{
+    flex-basis: calc((100% - 90px) / 3);
+}
+ .work-item:not(:nth-child(3n)){
+    margin-right: 30px;
+}
+.work-item:not(:nth-last-child(-n+3)){
+    margin-bottom: 30px;
+} */
+}
 
 .section-title{
         font-weight: var(--secondary-font-weight);
@@ -309,7 +316,6 @@ body{
     display: flex;
     flex-wrap: wrap;
 }
-
 .team-item:not(:nth-child(4n)){
     margin-right: 30px;
 }
@@ -317,8 +323,6 @@ body{
     margin-bottom: 30px;
 } */
 
-
-/* Можно так  в team-list кроме flex и wrap добавить */
 .team-list{
     display: flex;
     flex-wrap: wrap;
@@ -330,10 +334,13 @@ body{
     margin-left: 30px;
     margin-top: 30px;
     background: var(--main-white-color);
-    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+    box-shadow: var(--box-shadow-team-item-box);
     border-radius: 0px 0px 4px 4px;
 }
+.team-item-wrapper{
+    padding: 30px 0;
 
+}
 
 .team-title{
     font-weight: 500;
@@ -342,6 +349,7 @@ body{
     text-align: center;
     letter-spacing: var(--primary-letter-spacing);
     color: var(--main-h-color);
+    margin-bottom: 10px;
 }
 .team-text{
     font-weight: var(--primary-font-weight);
@@ -349,7 +357,6 @@ body{
     line-height: 1.19;
     text-align: center;
     letter-spacing: var(--primary-letter-spacing);
-    /* color: var(--main-p-color); */
 }
 
 /* ======================== /TEAM ========================================== */
