@@ -123,7 +123,7 @@ body{
 .nav-item:not(:last-child){
     margin-right: 50px;
 }
-.header-link-mail{
+.header-contacts-item:not(:last-child){
     margin-right: 50px;
 }
 
@@ -447,6 +447,8 @@ body{
     border-top: none;
     padding-top: 30px;
     padding-bottom: 30px;
+    padding-left: 24px;
+    padding-right: auto;
 }
 
 .content-title{
@@ -456,7 +458,7 @@ body{
     letter-spacing: 0.06em;
     color: var(--main-h-color);
 
-    margin-left: 24px;
+    /* margin-left: 24px; */
     margin-bottom: 4px;
 }
 .content-text{
@@ -466,7 +468,7 @@ body{
     letter-spacing: var(--primary-letter-spacing);
     color: var(--main-p-color);
 
-    margin-left: 24px;
+    /* margin-left: 24px; */
 }
 /* ====== /Content =======*/
 /* ============================= /PORTFOLIO html ====================== */
